@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/contacts.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <title> Vui vẻ</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="tb-mb-menu" id="menu" style="display: none">
+        <img class="tb-mb-menu-img" src="../img/logo.png" />
+        <div class="tb-mb-content">
+          <ul class="tb-mb-list">
+            <li class="tb-mb-item"><a href="../../index.html">TRANG CHỦ</a></li>
+            <li class="tb-mb-item"><a href="./infos.html">GIỚI THIỆU</a></li>
+            <li class="tb-mb-item">
+              <a href="./sightseeings.html">THAM QUAN</a>
+            </li>
+            <li class="tb-mb-item"><a href="./products.html">SẢN PHẨM</a></li>
+            <li class="tb-mb-item"><a href="./shops.html">CỬA HÀNG</a></li>
+            <li class="tb-mb-item"><a href="./blogs.html">TIN TỨC</a></li>
+            <li class="tb-mb-item">
+              <a href="./contacts.html" class="navbar__color">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <header class="header">
+        <div class="grid header__navbar">
+          <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="header__navbar-list tb-header">
+            <li class="navbar__item">
+              <a href="../../index.html">Trang chủ</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/infos.html">Giới thiệu</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/sightseeings.html">Tham quan</a>
+            </li>
+            <li class="navbar__item header__navbar-product">
+              <a href="../html/products.html"
+                >Sản phẩm <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="header__navbar-nameproduct header__navbar-before">
+                <li><a href="">Trái cây</a></li>
+                <li><a href="">Rau ăn lá</a></li>
+                <li><a href="">Rau ăn củ</a></li>
+                <li><a href="">Rau ăn quả</a></li>
+                <li><a href="">Rau gia vị</a></li>
+                <li style="border-bottom: none">
+                  <a href="">Thịt tươi sống</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/shops.html">Cửa hàng</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/blogs.html">Tin tức</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/contacts.html" class="navbar__color">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-user">
+              <span class="header__navbar-user-icon btn-1">
+                <i class="fas fa-user-plus"></i>
+              </span>
+            </li>
+            <li class="header__navbar-item header__navbar-cart">
+              <a href="../html/cart.html" class="header__navbar-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="app__container">
+        <div class="grid">
+          <section class="contacts">
+            <div class="contacts__info">
+              <div class="row contacts__part">
+                <div class="grid_column-49 part__box mobile-part-box1">
+                  <h2 class="part__box-business">BỘ PHẬN KINH DOANH</h2>
+                  <p class="part__box-content">
+                    Bạn muốn mua, phân phối sản phẩm của Vui Vẻ
+                  </p>
+                  <button class="btn contacts__btn">LIÊN HỆ NGAY</button>
+                </div>
+                <div class="grid_column-49 part__box mobile-part-box2">
+                  <h2 class="part__box-business">BỘ PHẬN QUẢN LÝ TOUR</h2>
+                  <p class="part__box-content">
+                    Bạn muốn tham quan, trải nghiệm tại Vui Vẻ
+                  </p>
+                  <button class="btn contacts__btn">LIÊN HỆ NGAY</button>
+                </div>
+              </div>
+
+              <div class="contacts__form">
+                <div class="contacts__form-title">
+                  <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
+                </div>
+                <form name="form" accept="" class="form">
+                  <div class="form__group">
+                    <label for="fullname" class="form-label"
+                      >Họ Và Tên (bắt buộc): </label
+                    ><br />
+                    <input
+                      name="fullname"
+                      type="text"
+                      placeholder="VD: Đình Quang"
+                      class="form-control"
+                      requied
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="phone" class="form-label"
+                      >Email (bắt buộc): </label
+                    ><br />
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                  <div class="form__group">
+                    <label for="phone" class="form-label">Tiêu đề: </label
+                    ><br />
+                    <input
+                      type="text"
+                      name="your-title"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                  <div class="form__group">
+                    <label class="form-label">Thông điệp: </label><br />
+                    <textarea
+                      name="your-message"
+                      rows="8"
+                      \
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <button class="btn form__group-btn">GỬI ĐI</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="button_scroll2top" onclick="page_scroll2top()">
+        <i class="fa fa-chevron-up icon-chevron"></i>
+      </div>
+      <div class="modal js-modal">
+        <!-- Register form -->
+        <form class="auth-form js-form login-pane active" id="register-pane">
+          <div class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng ký</h5>
+              <span class="auth-form__switch-btn" id="login-link"
+                >Đăng nhập</span
+              >
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập lại mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+        <!-- login form -->
+        <form class="auth-form js-form login-pane" id="login-pane">
+          <div class="modal-close js-modal2-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng nhập</h5>
+              <span class="auth-form__switch-btn" id="register-link">Đăng ký</span>
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn btn-normal auth-form__controls-back">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/scroll_btn.js"></script>
+    <script src="../js/menu.js"></script>
+    <!-- close cart -->
+    <script>
+      var closeButtons = document.querySelectorAll(".navbar__cart-close");
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function () {
+          var cartItem = this.closest(".navbar__cart-li");
+          cartItem.remove();
+        });
+      }
+    </script>
+  </body>
+</html>

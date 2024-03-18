@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <title>Vui vẻ</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="tb-mb-menu" id="menu" style="display: none">
+        <img class="tb-mb-menu-img" src="../img/logo.png" />
+        <div class="tb-mb-content">
+          <ul class="tb-mb-list">
+            <li class="tb-mb-item"><a href="../../index.html">TRANG CHỦ</a></li>
+            <li class="tb-mb-item"><a href="./infos.html">GIỚI THIỆU</a></li>
+            <li class="tb-mb-item">
+              <a href="./sightseeings.html">THAM QUAN</a>
+            </li>
+            <li class="tb-mb-item">
+              <a href="./products.html" class="navbar__color">SẢN PHẨM</a>
+            </li>
+            <li class="tb-mb-item"><a href="./shops.html">CỬA HÀNG</a></li>
+            <li class="tb-mb-item"><a href="./blogs.html">TIN TỨC</a></li>
+            <li class="tb-mb-item"><a href="./contacts.html">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </div>
+      <header class="header">
+        <div class="grid header__navbar">
+          <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="header__navbar-list tb-header">
+            <li class="navbar__item">
+              <a href="../../index.html">Trang chủ</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/infos.html">Giới thiệu</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/sightseeings.html">Tham quan</a>
+            </li>
+            <li class="navbar__item header__navbar-product">
+              <a href="../html/products.html" class="navbar__color"
+                >Sản phẩm <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="header__navbar-nameproduct header__navbar-before">
+                <li><a href="">Trái cây</a></li>
+                <li><a href="">Rau ăn lá</a></li>
+                <li><a href="">Rau ăn củ</a></li>
+                <li><a href="">Rau ăn quả</a></li>
+                <li><a href="">Rau gia vị</a></li>
+                <li style="border-bottom: none">
+                  <a href="">Thịt tươi sống</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/shops.html">Cửa hàng</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/blogs.html">Tin tức</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/contacts.html">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-user">
+              <span class="header__navbar-user-icon btn-1">
+                <i class="fas fa-user-plus"></i>
+              </span>              
+            </li>
+            <li class="header__navbar-item header__navbar-cart">
+              <a href="../html/cart.html" class="header__navbar-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="app__container">
+        <div class="grid">
+          <nav class="background">
+            <div class="wrapper">
+              <p class="wrapper__header-title">Sản phẩm</p>
+            </div>
+            <a
+              href="../../index.html"
+              title="Về trang chủ"
+              style="color: rgb(216, 82, 82)"
+              >Trang chủ</a
+            >
+            <span> > </span>
+            <span>Sản phẩm</span>
+          </nav>
+          <section class="products__section">
+            <div class="products__main">
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/traicay.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>TRÁI CÂY</p>
+                </div>
+              </a>
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/rauanla.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>RAU ĂN LÁ</p>
+                </div>
+              </a>
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/rauancu.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>RAU ĂN CỦ</p>
+                </div>
+              </a>
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/rauanqua.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>RAU ĂN QUẢ</p>
+                </div>
+              </a>
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/raugiavi.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>RAU GIA VỊ</p>
+                </div>
+              </a>
+              <a href="" class="products__main-list">
+                <div class="products__main-item">
+                  <img src="../img/thit.png" />
+                </div>
+                <div class="products__main-title">
+                  <p>THỊT TƯƠI SỐNG</p>
+                </div>
+              </a>
+            </div>
+            <article class="products__outstanding">
+              <div class="productLike__container">
+                <div class="margin_70 products__outstanding-title">
+                  <span
+                    ><i
+                      class="fa-solid fa-star"
+                      style="margin-top: 6px; margin-right: 5px"
+                    ></i
+                    >Sản phẩm nổi bật</span
+                  >
+                  <a href=""
+                    >Xem thêm <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </div>
+                <div class="margin_70 row productLike-list"></div>
+              </div>
+              <div class="productLike__container">
+                <div class="margin_70 products__outstanding-title">
+                  <span
+                    ><i class="fa-solid fa-bars" style="margin-right: 5px"></i
+                    >Rau ăn lá</span
+                  >
+                  <a href=""
+                    >Xem thêm <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </div>
+                <div class="margin_70 row productLike-leaf"></div>
+              </div>
+              <div class="productLike__container">
+                <div class="margin_70 products__outstanding-title">
+                  <span
+                    ><i class="fa-solid fa-bars" style="margin-right: 5px"></i
+                    >Rau ăn quả</span
+                  >
+                  <a href=""
+                    >Xem thêm <i class="fa-solid fa-chevron-right"></i
+                  ></a>
+                </div>
+                <div class="margin_70 row productLike-fruit"></div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <div class="button_scroll2top" onclick="page_scroll2top()">
+        <i class="fa fa-chevron-up icon-chevron"></i>
+      </div>
+      <div class="modal js-modal">
+        <!-- Register form -->
+        <form class="auth-form js-form login-pane active" id="register-pane">
+          <div class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng ký</h5>
+              <span class="auth-form__switch-btn" id="login-link"
+                >Đăng nhập</span
+              >
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập lại mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+        <!-- login form -->
+        <form class="auth-form js-form login-pane" id="login-pane">
+          <div class="modal-close js-modal2-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng nhập</h5>
+              <span class="auth-form__switch-btn" id="register-link">Đăng ký</span>
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn btn-normal auth-form__controls-back">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/scroll_btn.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/menu.js"></script>
+    <script>
+      const productList = document.querySelector(".productLike-list");
+      const productLeaf = document.querySelector(".productLike-leaf");
+      const productFruit = document.querySelector(".productLike-fruit");
+      const producting = {
+        outstandings: [
+          {
+            img: "../img/ot.jpg",
+            name: "Ớt",
+            price: "5,000₫",
+          },
+          {
+            img: "../img/noibat2.png",
+            name: "Cải bó xôi",
+            price: "11,000₫",
+          },
+          {
+            img: "../img/noibat3.jpg",
+            name: "Cà tím",
+            price: "12,000₫",
+          },
+          {
+            img: "../img/noibat4.webp",
+            name: "Cà rốt",
+            price: "12,000₫",
+          },
+          {
+            img: "../img/noibat5.jpg",
+            name: "Trái dứa",
+            price: "11,000₫",
+          },
+        ],
+
+        leaf_vegetables: [
+          {
+            img: "../img/bapcai.webp",
+            name: "Bắp cải",
+            price: "19,000₫",
+          },
+          {
+            img: "../img/bongbi.jpg",
+            name: "Bông bí",
+            price: "27,000₫",
+          },
+          {
+            img: "../img/cai-xanh-organic-300x300.jpg",
+            name: "Cải xanh",
+            price: "17,000₫",
+          },
+          {
+            img: "../img/caingong.jpg",
+            name: "Cải ngồng",
+            price: "17,000₫",
+          },
+          {
+            img: "../img/xalach.jpg",
+            name: "Xà lách",
+            price: "25,000₫",
+          },
+          {
+            img: "../img/chumngay.jpg",
+            name: "Chùm ngây ",
+            price: "10,000₫",
+          },
+          {
+            img: "../img/bongthienly.webp",
+            name: "Bông thiên lý",
+            price: "27,000₫",
+          },
+          {
+            img: "../img/raulang.webp",
+            name: "Rau lang",
+            price: "10,000₫",
+          },
+          {
+            img: "../img/rauma.jpg",
+            name: "Rau má",
+            price: "30,000₫",
+          },
+          {
+            img: "../img/rauden.jpg",
+            name: "Rau dền",
+            price: "15,000₫",
+          },
+        ],
+
+        fruit_vegetables: [
+          {
+            img: "../img/bidao.jpg",
+            name: "Bí đao",
+            price: "20,000₫",
+          },
+          {
+            img: "../img/dudu.jpg",
+            name: "Đu đủ",
+            price: "25,000₫",
+          },
+          {
+            img: "../img/bidodai.jpg",
+            name: "Bí đỏ dài",
+            price: "15,000₫",
+          },
+          {
+            img: "../img/cachuabi.png",
+            name: "Cà chua bi",
+            price: "12,000₫",
+          },
+          {
+            img: "../img/dualeo.webp",
+            name: "Dưa leo",
+            price: "15,000₫",
+          },
+        ],
+
+        render: function () {
+          const htmls = this.outstandings.map((product) => {
+            return `
+                        <div class="grid-col-5">
+                            <a class="productLike-item" href="">
+                                <img src='${product.img}'/>
+                                <div class="productLike-item-box">
+                                    <p class="productLike-item-name">${product.name}</p>
+                                    <p>${product.price}</p>
+                                </div>
+                                <div class=shopping-basket>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </a>
+                        </div>                 
+                         `;
+          });
+          const leaf = this.leaf_vegetables.map((product) => {
+            return `
+                        <div class="grid-col-5">
+                            <a class="productLike-item" href="">
+                                <img src='${product.img}'/>
+                                <div class="productLike-item-box">
+                                    <p class="productLike-item-name">${product.name}</p>
+                                    <p>${product.price}</p>
+                                </div>
+                                <div class=shopping-basket>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </a>
+                        </div>                 
+                         `;
+          });
+          const fruit = this.fruit_vegetables.map((product) => {
+            return `
+                        <div class="grid-col-5">
+                            <a class="productLike-item" href="">
+                                <img src='${product.img}'/>
+                                <div class="productLike-item-box">
+                                    <p class="productLike-item-name">${product.name}</p>
+                                    <p>${product.price}</p>
+                                </div>
+                                <div class=shopping-basket>
+                                    <i class="fas fa-shopping-basket"></i>
+                                </div>
+                            </a>
+                        </div>                 
+                         `;
+          });
+          productList.innerHTML = htmls.join("");
+          productLeaf.innerHTML = leaf.join("");
+          productFruit.innerHTML = fruit.join("");
+        },
+      };
+      producting.render();
+    </script>
+    <!-- close cart -->
+    <script>
+      var closeButtons = document.querySelectorAll(".navbar__cart-close");
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function () {
+          var cartItem = this.closest(".navbar__cart-li");
+          cartItem.remove();
+        });
+      }
+    </script>
+  </body>
+</html>

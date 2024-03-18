@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/sightseeing.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <title>Vui vẻ</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="tb-mb-menu" id="menu" style="display: none">
+        <img class="tb-mb-menu-img" src="../img/logo.png" />
+        <div class="tb-mb-content">
+          <ul class="tb-mb-list">
+            <li class="tb-mb-item"><a href="../../index.html">TRANG CHỦ</a></li>
+            <li class="tb-mb-item"><a href="./infos.html">GIỚI THIỆU</a></li>
+            <li class="tb-mb-item">
+              <a href="./sightseeings.html" class="navbar__color">THAM QUAN</a>
+            </li>
+            <li class="tb-mb-item"><a href="./products.html">SẢN PHẨM</a></li>
+            <li class="tb-mb-item"><a href="./shops.html">CỬA HÀNG</a></li>
+            <li class="tb-mb-item"><a href="./blogs.html">TIN TỨC</a></li>
+            <li class="tb-mb-item"><a href="./contacts.html">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </div>
+      <header class="header">
+        <div class="grid header__navbar">
+          <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="header__navbar-list tb-header">
+            <li class="navbar__item">
+              <a href="../../index.html">Trang chủ</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/infos.html">Giới thiệu</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/sightseeings.html" class="navbar__color"
+                >Tham quan</a
+              >
+            </li>
+            <li class="navbar__item header__navbar-product">
+              <a href="../html/products.html"
+                >Sản phẩm <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="header__navbar-nameproduct header__navbar-before">
+                <li><a href="">Trái cây</a></li>
+                <li><a href="">Rau ăn lá</a></li>
+                <li><a href="">Rau ăn củ</a></li>
+                <li><a href="">Rau ăn quả</a></li>
+                <li><a href="">Rau gia vị</a></li>
+                <li style="border-bottom: none">
+                  <a href="">Thịt tươi sống</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/shops.html">Cửa hàng</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/blogs.html">Tin tức</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/contacts.html">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-user">
+              <span class="header__navbar-user-icon btn-1">
+                <i class="fas fa-user-plus"></i>
+              </span>           
+            </li>
+            <li class="header__navbar-item header__navbar-cart">
+              <a href="../html/cart.html" class="header__navbar-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="app__container">
+        <div class="grid">
+          <nav class="background">
+            <div class="wrapper">
+              <p class="wrapper__header-title">Tham quan</p>
+            </div>
+            <a
+              href="../../index.html"
+              title="Về trang chủ"
+              style="color: rgb(216, 82, 82)"
+              >Trang chủ</a
+            >
+            <span> > </span>
+            <span>Tham quan</span>
+          </nav>
+          <div class="margin_70 container__review">
+            <div class="outstanding__title">
+              <h1>Đến nông trại có gì vui?</h1>
+            </div>
+            <!-- Review -->
+            <!-- CheckIn -->
+            <div class="checkIn">
+              <div class="review__box-empyt">
+                <h3>Nơi checkIn lý tưởng</h3>
+              </div>
+              <div class="review__list">
+                <div class="review__list-box">
+                  <img
+                    class="review__list-img-cover"
+                    src="../img/huongduong.jpg"
+                  />
+                  <div class="reivew__list-text">
+                    <h4>
+                      Vườn Hoa Hướng Dương - Nụ Cười Tươi Sáng Của Thiên Nhiên
+                    </h4>
+                  </div>
+                </div>
+                <div class="review__list-content">
+                  <div class="review__list-content-img">
+                    <img
+                      class="grid_column-3"
+                      src="../img/hoa-huong-duong_img1-11.jpg"
+                    />
+                    <img
+                      class="grid_column-3"
+                      src="../img/hoa-huong-duong-img2.webp"
+                    />
+                    <img
+                      class="grid_column-3 mobile-review-img"
+                      src="../img/hoa_huong_duong_img3.jpg"
+                    />
+                  </div>
+                  <p>
+                    Vườn hoa hướng dương là một điểm đến thú vị cho những người
+                    yêu thích vẻ đẹp tự nhiên và muốn trải nghiệm sự tươi mới và
+                    sự tinh thần lạc quan mà những bông hoa này mang lại. Với vẻ
+                    đẹp mê hoặc và ý nghĩa sâu sắc, vườn hoa hướng dương đã trở
+                    thành biểu tượng của sự tươi sáng và niềm vui.
+                  </p>
+                </div>
+                <div class="review__list-item">
+                  <!-- <p style="background-color: #fff; padding: 5px; border-radius: 15px; text-align: center;">Thời gian mở checkIn: </p> -->
+                  <div class="review__list-item-header">
+                    <p style="text-align: center; color: #333">
+                      Thời gian mở checkIn:
+                    </p>
+                  </div>
+                  <p
+                    style="
+                      background-color: #f9690e;
+                      padding: 5px;
+                      border-radius: 3px;
+                      color: #fff;
+                      margin: 10px;
+                    "
+                  >
+                    Mùa hè: Tháng 4-5
+                  </p>
+                  <p
+                    style="
+                      background-color: var(--primary-color);
+                      padding: 5px;
+                      border-radius: 3px;
+                      color: #fff;
+                      margin: 0 10px;
+                    "
+                  >
+                    Mùa đông: Tháng 11-12
+                  </p>
+                </div>
+              </div>
+              <div class="review__list">
+                <div class="review__list-box" style="order: 3">
+                  <img
+                    class="review__list-img-cover"
+                    src="../img/dau_img1.jpg"
+                  />
+                  <div class="reivew__list-text">
+                    <h4>Vườn Dâu - Nguồn Cảm Hứng Tươi Mát Từ Thiên Nhiên</h4>
+                  </div>
+                </div>
+                <div class="review__list-content" style="order: 2">
+                  <div class="review__list-content-img">
+                    <img class="grid_column-3" src="../img/dau_img2.jpg" />
+                    <img class="grid_column-3" src="../img/dau_img3jpg.jpg" />
+                    <img
+                      class="grid_column-3 mobile-review-img"
+                      src="../img/dau_img4.jpg"
+                    />
+                  </div>
+                  <p>
+                    Nằm trong một khung cảnh thiên nhiên tươi mát và màu sắc rực
+                    rỡ, vườn dâu là một địa điểm check-in hấp dẫn cho những
+                    người yêu thích việc chụp ảnh và tạo nên những khoảnh khắc
+                    sống động.
+                  </p>
+                </div>
+                <div class="review__list-item" style="order: 1">
+                  <div class="review__list-item-header">
+                    <p style="text-align: center; color: #333">
+                      Thời gian mở checkIn:
+                    </p>
+                  </div>
+                  <p
+                    style="
+                      background-color: #f9690e;
+                      padding: 5px;
+                      border-radius: 3px;
+                      color: #fff;
+                      margin: 10px;
+                    "
+                  >
+                    Mùa hè: Tháng 6-7
+                  </p>
+                </div>
+              </div>
+              <div class="review__list">
+                <div class="review__list-box">
+                  <img
+                    class="review__list-img-cover"
+                    src="../img/dưa_img1.jpg"
+                  />
+                  <div class="reivew__list-text">
+                    <h4>Vườn Dứa - Thiên Đường Xanh Tươi Trong Cánh Đồng</h4>
+                  </div>
+                </div>
+                <div class="review__list-content">
+                  <div class="review__list-content-img">
+                    <img class="grid_column-3" src="../img/dưa_img2.webp" />
+                    <img class="grid_column-3" src="../img/dưa_img3.jpg" />
+                    <img
+                      class="grid_column-3 mobile-review-img"
+                      src="../img/dua_img4.jpg"
+                    />
+                  </div>
+                  <p>
+                    Vườn dứa là một điểm đến đặc biệt và hấp dẫn cho những người
+                    yêu thích thiên nhiên và muốn tìm hiểu về cây trồng nhiệt
+                    đới này.
+                  </p>
+                </div>
+                <div class="review__list-item">
+                  <div class="review__list-item-header">
+                    <p style="text-align: center; color: #333">
+                      Thời gian mở checkIn:
+                    </p>
+                  </div>
+                  <p
+                    style="
+                      background-color: #f9690e;
+                      padding: 5px;
+                      border-radius: 3px;
+                      color: #fff;
+                      margin: 10px;
+                    "
+                  >
+                    Mùa hè: Tháng 6-9
+                  </p>
+                  <p
+                    style="
+                      background-color: #0b7fab;
+                      padding: 5px;
+                      border-radius: 3px;
+                      color: #fff;
+                      margin: 0 10px;
+                    "
+                  >
+                    Mùa xuân: Tháng 3-5
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- experience -->
+            <div class="experience">
+              <div class="review__box-empyt">
+                <h3>Nơi trải nghiệm cuộc sống nông dân</h3>
+              </div>
+              <div class="review__experience">
+                <div class="grid_column-4 review__experience-list">
+                  <img src="../img/exp.jpeg" />
+                  <p>
+                    "Trải Nghiệm Tự Trồng Rau: Hành Trình Chăm Sóc Và Thu Hoạch"
+                  </p>
+                </div>
+                <div class="grid_column-4 review__experience-list">
+                  <img src="../img/exp2.jpg" />
+                  <p>"Làm Quen Với Cuộc Sống Chăn Nuôi"</p>
+                </div>
+                <div class="grid_column-4 review__experience-list">
+                  <img src="../img/exp3.jpg" />
+                  <p>
+                    "Tận Hưởng Bình Yên Mương Nước: Trải Nghiệm bắt cá dưới
+                    mương"
+                  </p>
+                </div>
+                <div class="grid_column-4 review__experience-list">
+                  <img src="../img/exp4.jpg" />
+                  <p>"Trải nghiệm học cách: Trồng rau tươi sạch tại nhà"</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- relax -->
+            <!-- <div class="relax">
+                        <div class="review__box-empyt">
+                            <h3>Nơi thư giãn</h3>
+                         </div
+                     </div> -->
+          </div>
+
+          <div class="margin_70 container__trip">
+            <div class="grid_column-2 trip__left">
+              <div class="trip__title">
+                <h3>
+                  HÀNH TRÌNH THAM QUAN <i class="fa-solid fa-signs-post"></i>
+                </h3>
+              </div>
+              <ul class="trip__map">
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/dangki.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>ĐĂNG KÍ THAM QUAN</h3>
+                    <p>
+                      Quý khách vui lòng đăng kí tham quan với bộ phần quản lý
+                      tour
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/history_1.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>PHƯƠNG TIỆN , DI CHUYỂN</h3>
+                    <p>
+                      Quý khách sử dụng phương tiện cá nhân đến địa điểm farm
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/checkin.jpg" />
+                  </div>
+                  <div class="box__content">
+                    <h3>CHECK IN</h3>
+                    <p>
+                      Quý khách vui lòng dừng chân tại địa điểm checkin để được
+                      hướng dẫn
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/info.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>GIỚI THIỆU NÔNG TRẠI</h3>
+                    <p>
+                      Quý khách sẽ được HDV giới thiệu quy trình sản xuất nông
+                      nghiệp hữu cơ
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/tourist.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>THAM QUAN CHỤP ẢNH</h3>
+                    <p>
+                      Quý khách được tự do tham quan và chụp ảnh trong khuông
+                      viên nông trại
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/activiti.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>THAM GIA CÁC HOẠT ĐỘNG</h3>
+                    <p>
+                      Quý khách có thể tham gia các hoạt động của trại : trồng
+                      cây con, nhổ cỏ, thu hoạch rau
+                    </p>
+                  </div>
+                </li>
+                <li class="trip__map-list">
+                  <div class="trip__map-box-img">
+                    <img src="../img/catering.png" />
+                  </div>
+                  <div class="box__content">
+                    <h3>ĂN UỐNG, NGHỈ NGƠI</h3>
+                    <p>
+                      Quý khách có thể thể thưởng thức những món ăn được chế
+                      biến từ những nguyên liệu được trồng tại nông trại
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="grid_column-2 trip__center">
+              <div class="trip__register">
+                <h2>PHIẾU ĐĂNG KÍ</h2>
+                <p>Bạn muốn trải nghiệm tại nông trại Vui Vẻ</p>
+              </div>
+              <form name="form" accept="" class="form">
+                <div class="form__group">
+                  <label for="date" class="form-label">Ngày dự kiến: </label
+                  ><br />
+                  <input
+                    type="date"
+                    name="date-tor"
+                    class="form-control"
+                    required
+                  />
+                  <span class="form-message"></span>
+                </div>
+                <div class="form__group">
+                  <label for="form" class="form-label"
+                    >Chọn loại đối tượng</label
+                  >
+                  <br />
+                  <select name="menu-guest" class="form-control">
+                    <option value="">---</option>
+                    <option value="Cá nhân">Cá nhân</option>
+                    <option value="Gia đình">Gia đình</option>
+                    <option value="Nhóm">Nhóm</option>
+                    <option value="Công ty">Công ty</option>
+                  </select>
+                  <span class="form-message"></span>
+                </div>
+
+                <div class="row">
+                  <div class="grid_column-49 form__group">
+                    <label for="quantity" class="form-label"
+                      >Số lượng người lớn:</label
+                    ><br />
+                    <input
+                      type="number"
+                      name="number-guest"
+                      value="0"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                  <div class="grid_column-49 form__group">
+                    <label for="quantity" class="form-label"
+                      >Số lượng trẻ em:</label
+                    ><br />
+                    <input
+                      type="number"
+                      name="number_guest"
+                      value="0"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="grid_column-49 form__group">
+                    <label for="fullname" class="form-label">Họ Và Tên: </label
+                    ><br />
+                    <input
+                      name="fullname"
+                      type="text"
+                      placeholder="VD: Đình Quang"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                  <div class="grid_column-49 form__group">
+                    <label for="phone" class="form-label">Số điện thoại: </label
+                    ><br />
+                    <input
+                      type="tel"
+                      name="your-phone"
+                      class="form-control"
+                      required
+                    />
+                    <span class="form-message"></span>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <label class="form-label">Ghi chú: </label><br />
+                  <textarea
+                    name="your-message"
+                    rows="8"
+                    \
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <button class="btn form__group-btn">Đăng kí</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button_scroll2top" onclick="page_scroll2top()">
+        <i class="fa fa-chevron-up icon-chevron"></i>
+      </div>
+      <div class="modal js-modal">
+        <!-- Register form -->
+        <form class="auth-form js-form login-pane active" id="register-pane">
+          <div class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng ký</h5>
+              <span class="auth-form__switch-btn" id="login-link"
+                >Đăng nhập</span
+              >
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập lại mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+        <!-- login form -->
+        <form class="auth-form js-form login-pane" id="login-pane">
+          <div class="modal-close js-modal2-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng nhập</h5>
+              <span class="auth-form__switch-btn" id="register-link">Đăng ký</span>
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn btn-normal auth-form__controls-back">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/scroll_btn.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/menu.js"></script>
+    <!-- close cart -->
+    <script>
+      var closeButtons = document.querySelectorAll(".navbar__cart-close");
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function () {
+          var cartItem = this.closest(".navbar__cart-li");
+          cartItem.remove();
+        });
+      }
+    </script>
+  </body>
+</html>

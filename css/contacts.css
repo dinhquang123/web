@@ -1,0 +1,56 @@
+.contacts__part,
+.contacts__form {
+  margin: 0 180px;
+}
+
+.contacts__info {
+  margin-top: 30px;
+  background-color: var(--primary-color-2);
+  padding-bottom: 80px;
+}
+
+.contacts__googlemap iframe{
+  width: 100%;
+}
+
+.part__box {
+  text-align: center;
+  background-color: var(--while-color);
+  padding: 40px 0;
+  margin-top: -70px;
+  box-shadow: 0 10px 20px #c7c6c6;
+  /* height: 300px; */
+}
+
+.part__box-business {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.part__box-content {
+  padding: 16px 0;
+}
+
+.contacts__btn {
+  background-color: var(--while-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  border: 3px solid var(--primary-color);
+  margin-top: 16px;
+}
+
+.contacts__btn:hover {
+  background-color: var(--orange-color);
+  color: var(--while-color);
+  border: none;
+}
+
+.contacts__form {
+  background-color: var(--while-color);
+  margin-top: 40px;
+  padding: 30px 150px 120px 150px;
+}
+
+.contacts__form-title {
+  text-align: center;
+}

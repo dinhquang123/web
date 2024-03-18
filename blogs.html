@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <link rel="stylesheet" href="../css/sightseeing.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <title> Vui vẻ</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="tb-mb-menu" id="menu" style="display: none">
+        <img class="tb-mb-menu-img" src="../img/logo.png" />
+        <div class="tb-mb-content">
+          <ul class="tb-mb-list">
+            <li class="tb-mb-item"><a href="../../index.html">TRANG CHỦ</a></li>
+            <li class="tb-mb-item"><a href="./infos.html">GIỚI THIỆU</a></li>
+            <li class="tb-mb-item">
+              <a href="./sightseeings.html">THAM QUAN</a>
+            </li>
+            <li class="tb-mb-item"><a href="./products.html">SẢN PHẨM</a></li>
+            <li class="tb-mb-item"><a href="./shops.html">CỬA HÀNG</a></li>
+            <li class="tb-mb-item">
+              <a href="./blogs.html" class="navbar__color">TIN TỨC</a>
+            </li>
+            <li class="tb-mb-item"><a href="./contacts.html">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+      </div>
+      <header class="header">
+        <div class="grid header__navbar">
+          <div class="mobile-menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="header__navbar-list tb-header">
+            <li class="navbar__item">
+              <a href="../../index.html">Trang chủ</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/infos.html">Giới thiệu</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/sightseeings.html">Tham quan</a>
+            </li>
+            <li class="navbar__item header__navbar-product">
+              <a href="../html/products.html"
+                >Sản phẩm <i class="fa fa-caret-down"></i
+              ></a>
+              <ul class="header__navbar-nameproduct header__navbar-before">
+                <li><a href="">Trái cây</a></li>
+                <li><a href="">Rau ăn lá</a></li>
+                <li><a href="">Rau ăn củ</a></li>
+                <li><a href="">Rau ăn quả</a></li>
+                <li><a href="">Rau gia vị</a></li>
+                <li style="border-bottom: none">
+                  <a href="">Thịt tươi sống</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/shops.html">Cửa hàng</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/blogs.html" class="navbar__color">Tin tức</a>
+            </li>
+            <li class="navbar__item">
+              <a href="../html/contacts.html">Liên hệ</a>
+            </li>
+          </ul>
+          <ul class="header__navbar-list">
+            <li class="header__navbar-item header__navbar-user">
+              <span class="header__navbar-user-icon btn-1">
+                <i class="fas fa-user-plus"></i>
+              </span>
+            </li>
+            <li class="header__navbar-item header__navbar-cart">
+              <a href="../html/cart.html" class="header__navbar-cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="app__container">
+        <div class="grid">
+          <section class="blogs__section">
+            <!-- Slider -->
+            <div class="slideshow__container">
+              <div class="mySlides blog_slide">
+                <img class="tb-mobile-mySlide" src="../img/blog1.jpg" />
+                <p class="blogs__slide-header">Tin tức</p>
+                <p class="blogs__slide-content">
+                   Vui Vẻ cùng trường Ischool Hải Dương tổ chức buổi học ngoại
+                  khóa
+                </p>
+              </div>
+              <div class="mySlides">
+                <img class="tb-mobile-mySlide" src="../img/blog2.jpg" />
+                <p class="blogs__slide-header">Sự kiện</p>
+                <p class="blogs__slide-content">
+                  Tour trải nghiệm nông trại Vui Vẻ
+                </p>
+              </div>
+              <div class="mySlides">
+                <img class="tb-mobile-mySlide" src="../img/blog4.jpg" />
+                <p class="blogs__slide-header">Góc báo chí</p>
+                <p class="blogs__slide-content">
+                  Vui Vẻ được lên sóng truyền hình BTV
+                </p>
+              </div>
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <br />
+            </div>
+            <div class="margin_70 blog-header">
+              <span class="blog__header-home"
+                ><a href="../../index.html">Trang chủ</a></span
+              >
+              <span
+                ><i class="fa-solid fa-chevron-right" style="color: #cbcbcb"></i
+              ></span>
+              <span class="blog__header-event"
+                ><a href="">Tin tức&Sự kiện</a></span
+              >
+            </div>
+            <div class="margin_70 blogs__tags row">
+              <div class="grid_column-4 blogs__tags-list">
+                <div class="trip__left" style="margin-right: 30px">
+                  <div class="trip__title">
+                    <h3>DANH MỤC</h3>
+                  </div>
+                  <div class="blogs__category">
+                    <ul class="category-list">
+                      <li class="category-item" style="border: none">
+                        <a href="../../index.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Trang chủ</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./infos.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Giới thiệu</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./sightseeings.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Tham quan</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./products.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Sản phẩm</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./shops.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Cửa hàng</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./blogs.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Tin tức</a
+                        >
+                      </li>
+                      <li class="category-item">
+                        <a href="./contacts.html"
+                          ><i class="fa fa-arrow-circle-right"></i>Liên hệ</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  class="trip__left"
+                  style="margin-top: 40px; margin-right: 30px"
+                >
+                  <div class="trip__title">
+                    <h3>SẢN PHẨM NỔI BẬT</h3>
+                  </div>
+                  <div class="blogs__category">
+                    <ul class="category-list">
+                      <li class="category-item">
+                        <a href="" class="item-hotnews">
+                          <img src="../img/cachuabi.png" />
+                          <div class="category__hotnews">
+                            <p class="blogs__item-title category-item-title">
+                              Cà chua bi
+                            </p>
+                            <p
+                              class="blogs__item-content category-item-content"
+                            >
+                              Cà chua bi chứa thành phần dinh dưỡng tương tự cà
+                              chua thường, chỉ khác là hàm lượng thấp hơn đôi
+                              chút. Loại quả này mang tới nhiều lợi ích cho sức
+                              khỏe, đặc biệt có thể sử dụng thường xuyên trong
+                              thực đơn ăn kiêng nhờ lượng calo thấp: 150g cà
+                              chua bi chỉ chứa khoảng 30kcal.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="category-item">
+                        <a href="" class="item-hotnews">
+                          <img src="../img/rauma.jpg" />
+                          <div class="category__hotnews">
+                            <p class="blogs__item-title category-item-title">
+                              Rau má
+                            </p>
+                            <p
+                              class="blogs__item-content category-item-content"
+                            >
+                              Theo y học cổ truyền, rau má có vị đắng, hơi ngọt,
+                              tính bình, vào Can, Tỳ Vị có tác dụng dưỡng âm,
+                              thanh nhiệt, nhuận gan, giải độc, lợi tiểu. Đông y
+                              thường dùng rau má làm thuốc bổ dưỡng, sát trùng,
+                              chữa thổ huyết, tả lỵ, khí hư, bạch đới, mụn nhọt,
+                              rôm sẩy. Từ những năm 1940, y học hiện đại bắt đầu
+                              nghiên cứu những tác dụng của rau má: Rau má có
+                              những hoạt chất thuộc nhóm saponins (còn được gọi
+                              là tripernoids) bao gồm asiaticoside,
+                              madecassoside, madecassic acid và asiatic acid…
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="category-item">
+                        <a href="" class="item-hotnews">
+                          <img src="../img/bidodai.jpg" />
+                          <div class="category__hotnews">
+                            <p class="blogs__item-title category-item-title">
+                              Bí đỏ dài
+                            </p>
+                            <p
+                              class="blogs__item-content category-item-content"
+                            >
+                              Bí đỏ dài tác dụng vô cùng ấn tượng có chứa hàm
+                              lượng cao axit Glutami – chất thiết yếu cho hoạt
+                              động của não bộ tốt cho mắt, giúp giảm cân hiệu
+                              quả tăng cường hệ miễn dịch cho cơ thể, tốt cho
+                              tim mạch, phòng chống ung thư, ngăn ngừa tiểu
+                              đường.
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="category-item">
+                        <a href="" class="item-hotnews">
+                          <img src="../img/daubap.jpg" />
+                          <div class="category__hotnews">
+                            <p class="blogs__item-title category-item-title">
+                              Cà chua bi
+                            </p>
+                            <p
+                              class="blogs__item-content category-item-content"
+                            >
+                              Đậu bắp giàu chất xơ, ít calo, chứa nhiều pectin,
+                              chất chống oxy hóa, vitamin A, C, K và folate… Đậu
+                              bắp có tác dụng hỗ trợ giảm cân, tốt cho hệ tiêu
+                              hóa, tốt cho mắt, thận, ngừa ung thư, tăng cường
+                              hệ miễn dịch, hỗ trợ khả năng sinh sản và ổn sức
+                              khỏe cho thai nhi, kiểm soát đường huyết…
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blogs__info">
+                <div class="blogs__info-header">
+                  <p>TIN TỨC</p>
+                </div>
+                <div class="blogs__info-body">
+                  <div class="blogs__info-list">
+                    <a href="">
+                      <img src="../img/blog1.webp" />
+                    </a>
+                    <a href="">
+                      <p class="blogs__item-title blogs__info-item">
+                        Cách chăm sóc rau trồng đúng cách
+                      </p>
+                      <p class="blogs__item-content blogs__info-content">
+                        Để có một vườn rau xanh tốt, từ khi gieo hạt chúng ta
+                        cần biết cách chăm sóc rau hằng ngày. Việc tưới nước là
+                        điều rất quan trọng, bạn cần kiểm tra, tưới nước định kỳ
+                        cho cây. Chú ý không để cho cây thiếu nước hoặc quá úng
+                        nước. Mùa nắng tưới ngày 2 lần vào sáng sớm và chiều
+                        mát.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="blogs__info-list">
+                    <a href="">
+                      <img src="../img/giongcay.jpg" />
+                    </a>
+                    <a href="">
+                      <p class="blogs__item-title blogs__info-item">
+                        Lựa chọn giống cây tốt
+                      </p>
+                      <p class="blogs__item-content blogs__info-content">
+                        Giống có vai trò quan trọng ảnh hưởng đến năng suất,
+                        chất lượng cây trồng. Có được nguồn giống tốt thì cây
+                        trồng có được khởi đầu tốt. Tùy vào đặc điểm thổ nhưỡng
+                        và khí hậu, mỗi nơi sẽ phù hợp với mỗi loại cây khác
+                        nhau. Vì vậy, việc nghiên cứu tạo giống tốt, phù hợp với
+                        địa phương là đặc biệt quan trọng.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="blogs__info-list">
+                    <a href="">
+                      <img src="../img/mohinhnongtrai.jpg" />
+                    </a>
+                    <a href="">
+                      <p class="blogs__item-title blogs__info-item">
+                        Mô hình nông trại tổng hợp
+                      </p>
+                      <p class="blogs__item-content blogs__info-content">
+                        Mô hình trang trại tổng hợp hiện đang là hướng đi mới mẻ
+                        và hiệu quả của nhiều người nông dân. Mô hình trang trại
+                        tổng hợp này đã giải quyết những vấn đề về thức ăn cho
+                        vật nuôi, nguồn dinh dưỡng cho cây trồng và giảm thiểu ô
+                        nhiễm môi trường.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div class="blogs__info-header" style="margin-top: 50px">
+                  <p>SỰ KIỆN</p>
+                </div>
+                <div class="blogs__info-event row">
+                  <div class="grid_column-3 blogs__event-list">
+                    <a href=""> <img src="../img/blog2.jpg" </a>
+                    <a href=""
+                      ><p class="blogs__event-title">
+                        Tour trải nghiệm tại nông trại Vui Vẻ
+                      </p></a
+                    >
+                  </div>
+                  <div class="grid_column-3 blogs__event-list">
+                    <a href=""> <img src="../img/baobinhdinh-144170.jpg" </a>
+                    <a href=""
+                      ><p class="blogs__event-title">
+                        Xuất ngoại" học sinh trồng rau sạch
+                      </p></a
+                    >
+                   
+                  </div>
+                  <div class="grid_column-3 blogs__event-list">
+                    <a href=""> <img src="../img/blog4.jpg" </a>
+                    <a href=""
+                      ><p class="blogs__event-title">
+                        Vui Vẻ được lên sóng truyền hình vtv
+                      </p></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="button_scroll2top" onclick="page_scroll2top()">
+        <i class="fa fa-chevron-up icon-chevron"></i>
+      </div>
+      <div class="modal js-modal">
+        <!-- Register form -->
+        <form class="auth-form js-form login-pane active" id="register-pane">
+          <div class="modal-close js-modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng ký</h5>
+              <span class="auth-form__switch-btn" id="login-link"
+                >Đăng nhập</span
+              >
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập lại mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+              <button class="btn">ĐĂNG KÝ</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+        <!-- login form -->
+        <form class="auth-form js-form login-pane" id="login-pane">
+          <div class="modal-close js-modal2-close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="auth-form__container">
+            <div class="auth-form__header">
+              <h5 class="auth-form__heading">Đăng nhập</h5>
+              <span class="auth-form__switch-btn" id="register-link">Đăng ký</span>
+            </div>
+
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input
+                  type="text"
+                  class="auth-form__input"
+                  placeholder="Nhập Email"
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="auth-form__group">
+                <input
+                  type="password"
+                  class="auth-form__input"
+                  placeholder="Nhập Mật khẩu"
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="auth-form__aside">
+              <div class="auth-form__help">
+                <a href="" class="auth-form__help-link auth-form__help-forgot"
+                  >Quên mật khẩu</a
+                >
+                <span class="auth-form__help-separate"></span>
+                <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+              </div>
+            </div>
+
+            <div class="auth-form__controls">
+              <button class="btn btn-normal auth-form__controls-back">
+                TRỞ LẠI
+              </button>
+              <button class="btn btn--primary">ĐĂNG NHẬP</button>
+            </div>
+          </div>
+
+          <div class="auth-form__socials">
+            <a href="" class="auth-form__socials--facebook auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+              <span class="auth-form__socials-title">Kết nối với facebook</span>
+            </a>
+            <a href="" class="auth-form__socials--google auth-form-btn">
+              <i class="auth-form__socials-icon fab fa-google"></i>
+              <span class="auth-form__socials-title">Kết nối với google</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/scroll_btn.js"></script>
+    <script src="../js/menu.js"></script>
+    <!-- close cart -->
+    <script>
+      var closeButtons = document.querySelectorAll(".navbar__cart-close");
+      for (var i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener("click", function () {
+          var cartItem = this.closest(".navbar__cart-li");
+          cartItem.remove();
+        });
+      }
+    </script>
+  </body>
+</html>
